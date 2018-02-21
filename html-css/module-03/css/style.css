@@ -1,29 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
+
 * {
 	margin: 0;
 	padding: 0;
+	
 }
+
 
 
 #wrapper {
 	width: 1200px;
-	border: 1px solid silver;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 header {
 	margin: 75px 0px 100px 300px; 
+	color: #666666;
+	font-family: 'Playfair Display';
+}
+
+header span:hover {
+	color: black;
 }
 
 header span{
 	display: inline-block;
-	margin-right: 120px;
+}
+
+#menu_2 {
+	margin-left: 120px;
+}
+
+#menu_3 {
+	margin-left: 100px;
+}
+
+#menu_4 {
+	margin-left: 95px;
 }
 
 .block_left, .block_right {
 	width: 420px;
 	display: inline-block;
+	color: #666666;
+	font-family: 'Playfair Display';
 	
+}
+
+.block_left span {
+	font-family: 'Ubuntu';
+	color: #b4ad9e;
+}
+
+.block_right span {
+	font-family: 'Ubuntu';
+	color: #b4ad9e;
 }
 
 .block_left {
@@ -40,6 +74,14 @@ img {
 	margin: 0 0 30px 0;
 }
 
+.block_left span{
+	font-size: 14px;
+}
+
+.block_right span{
+	font-size: 14px;
+}
+
 h2 {
 	margin: 30px 0 30px 0;
 }
@@ -48,6 +90,16 @@ p {
 	margin: 0 0 140px 0;
 }
 
-header span:hover {
-	color: green;
+
+input {
+	display: inline-block;
+	margin: 0 0 70px 510px;
+	width: 160px;
+	height: 60px;
+	background-color: #fff;
+	border: 1px solid black;
+	color: #666666;
+	font-family: 'Playfair Display';
+
 }
+
