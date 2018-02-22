@@ -14,7 +14,10 @@
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	border: 1px solid black;
 }
+
+/* Меню */
 
 header {
 	margin: 75px 0px 100px 300px; 
@@ -42,30 +45,35 @@ header span{
 	margin-left: 95px;
 }
 
+/* Основной контент */
+
 .block_left, .block_right {
 	width: 420px;
+	padding: 20px;
 	display: inline-block;
 	color: #666666;
 	font-family: 'Playfair Display';
-	
+	border: 1px solid black;
 }
 
 .block_left span {
 	font-family: 'Ubuntu';
 	color: #b4ad9e;
+	font-size: 14px;
 }
 
 .block_right span {
 	font-family: 'Ubuntu';
 	color: #b4ad9e;
+	font-size: 14px;
 }
 
 .block_left {
-	margin: 0 55px 0 150px;
+	margin: 0 20px 90px 120px;
 }
 
 .block_right {
-	margin: 0 150px 0 0;
+	margin: 0 120px 90px 0;
 }
 
 img {
@@ -74,22 +82,15 @@ img {
 	margin: 0 0 30px 0;
 }
 
-.block_left span{
-	font-size: 14px;
-}
-
-.block_right span{
-	font-size: 14px;
-}
-
 h2 {
-	margin: 30px 0 30px 0;
+	margin: 30px 0px 10px 0;
 }
 
 p {
-	margin: 0 0 140px 0;
+	width: 420px;
 }
 
+/* Кнопка */
 
 input {
 	display: inline-block;
@@ -100,6 +101,5 @@ input {
 	border: 1px solid black;
 	color: #666666;
 	font-family: 'Playfair Display';
-
 }
 
