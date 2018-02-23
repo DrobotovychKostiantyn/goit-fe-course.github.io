@@ -1,3 +1,4 @@
+@import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 
@@ -25,13 +26,17 @@ header {
 	font-family: 'Playfair Display';
 }
 
-header span:hover {
+ul  li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+}
+
+ul li:hover {
 	color: black;
 }
 
-header span{
-	display: inline-block;
-}
+
 
 #menu_2 {
 	margin-left: 120px;
@@ -69,11 +74,11 @@ header span{
 }
 
 .block_left {
-	margin: 0 20px 90px 120px;
+	margin: 0 16px 90px 127px;
 }
 
 .block_right {
-	margin: 0 120px 90px 0;
+	margin: 0 127px 90px 0;
 }
 
 img {
