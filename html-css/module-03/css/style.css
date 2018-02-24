@@ -3,18 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 
 
-#wrapper {
+.wrapper {
 	width: 100%;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-/*	border: 1px solid black;*/
 }
 
 /* Меню */
 
-header {
-	margin: 75px 0px 100px 300px; 
+.nav {
+	margin: 65px 0px 70px 300px; 
 	color: #666666;
 	font-family: 'Playfair Display';
 }
@@ -24,12 +23,13 @@ ul  li{
 	list-style-type: none;
 	display: inline-block;
 	text-transform: uppercase;
-	padding: 10px;
+	
 }
 
 a {
 	text-decoration: none;
 	color: #666666;
+	padding: 5px;
 }
 
 a:hover {
@@ -37,15 +37,7 @@ a:hover {
 }
 
 
-#menu_2 {
-	margin-left: 80px;
-}
-
-#menu_3 {
-	margin-left: 80px;
-}
-
-#menu_4 {
+.menu {
 	margin-left: 80px;
 }
 
@@ -58,7 +50,18 @@ a:hover {
 	display: inline-block;
 	color: #666666;
 	font-family: 'Playfair Display';
-	/*border: 1px solid black;*/
+}
+
+.block_left {
+	margin: 0 16px 100px 130px;
+}
+
+.block_right {
+	margin: 0 130px 100px 0;
+}
+
+.last_block {
+	margin-bottom: 55px;
 }
 
 .block_left span {
@@ -75,18 +78,6 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.block_left {
-	margin: 0 16px 90px 130px;
-}
-
-.block_right {
-	margin: 0 130px 90px 0;
-}
-
-.last_block {
-	margin-bottom: 55px;
-}
-
 img {
 	width: 420px;
 	height: 280px;
@@ -101,14 +92,16 @@ h2 {
 p {
 	width: 420px;
 	font-size: 14px;
+	line-height: 1.5;
 }
 
 
 /* Кнопка */
 
-input {
+button {
 	display: inline-block;
 	margin: 0 0 70px 510px;
+	padding: 0;
 	width: 160px;
 	height: 60px;
 	background-color: #fff;
