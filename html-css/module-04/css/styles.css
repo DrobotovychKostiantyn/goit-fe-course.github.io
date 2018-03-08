@@ -1,0 +1,87 @@
+@import url(reset.css);
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	border: 1px solid silver;
+	padding: 35px 0;
+	height: auto;
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+	margin-left: 35px;
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.logo:first-letter{
+	color: #33cc99;
+}
+
+.menu li a{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+	float: right;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+.menu li a:hover{
+	color: #33cc99;
+}
+
+.menu {
+	height: auto;
+	margin-bottom: 100px;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gallery {
+	height: auto;
+
+}
+
+h2{
+	text-align: center;
+	font-size: 48px;
+	line-height: 32px;
+	color: black;
+	text-transform: uppercase;
+}
+
+h2:after{
+	display: block;
+	content: " ";
+	height: 7px;
+	width: 164px;
+	background: #33cc99;
+	margin: 30px auto;
+}
+
+.featured {
+	width: 21%;
+	float: left;
+	margin-right: 30px;
+	background: #e9f0fd;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.section{
+	float: left;
+	width: 25%;
+}
+
+
+
