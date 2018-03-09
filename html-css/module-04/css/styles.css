@@ -1,10 +1,16 @@
 @import url(reset.css);
 
+* {
+	
+	box-sizing: border-box;
+}
+
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
-	border: 1px solid silver;
-	padding: 35px 0;
+	font-size: 16px;
+	outline: 1px solid silver;
+	padding: 35px 0 80px 30px;
 	height: auto;
 	overflow: hidden;
 }
@@ -49,7 +55,7 @@
 
 .gallery {
 	height: auto;
-
+	margin-bottom: 100px;
 }
 
 h2{
@@ -66,21 +72,97 @@ h2:after{
 	height: 7px;
 	width: 164px;
 	background: #33cc99;
-	margin: 30px auto;
+	margin: 30px auto 80px;
 }
 
 .featured {
-	width: 21%;
+	width: 22.3%;
 	float: left;
 	margin-right: 30px;
 	background: #e9f0fd;
 	height: auto;
+	overflow: hidden;
 	margin-bottom: 20px;
 }
 
+.featured h3{
+	display: inline-block;
+	width: 80%;
+	height: 40px;
+	background: #333333;
+	color: #fff;
+	font-size: 18px;
+	line-height: 32px;
+	text-transform: uppercase;
+	padding: 5px 0 5px 5px;
+} 
+
+.price {
+	display: inline-block;
+	width: 20%;
+	margin-left: -4px;
+	height: 40px;
+	background-color: #999999;
+	color: #fff;
+	font-size: 18px;
+	line-height: 32px;
+	text-transform: uppercase;
+	padding: 5px 0 5px 10px;
+}
+
+
+.featured:nth-of-type(4n){
+	margin-right: 0;
+}
+
+
+.featured:hover h3{
+	background: #33cc99;
+}
+
+.featured:hover .price{
+	background: #7fd9c7;
+}
+
+
 .section{
 	float: left;
-	width: 25%;
+	width: 30.5%;
+	margin-right: 30px;
+}
+
+.section:last-of-type{
+	margin-right: 0px;
+}
+
+.section img{
+	margin-bottom: 20px;
+}
+
+p:first-of-type:after{
+	display: block;
+	content: " ";
+	height: 3px;
+	width: 136px;
+	background: #33cc99;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+p:last-of-type{
+	margin-bottom: 20px;
+}
+
+
+button{
+	width: 160px;
+	height: 50px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+	background: #33cc99;
+	border: none;
+	border-radius: 3px;
 }
 
 
