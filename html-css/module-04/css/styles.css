@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,900');
 
 * {
 	
@@ -6,11 +7,11 @@
 }
 
 .wrapper {
-	width: 1170px;
+	width: 1110px;
 	margin: 0 auto;
 	font-size: 16px;
-	outline: 1px solid silver;
-	padding: 35px 0 80px 30px;
+	/*outline: 1px solid silver;*/
+	padding: 35px 0 80px 0px;
 	height: auto;
 	overflow: hidden;
 }
@@ -19,23 +20,31 @@
 	float: left;
 	margin-left: 35px;
 	text-decoration: none;
-	color: black;
+	color: #666666;
 	font-size: 30px;
 	line-height: 32px;
 	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 .logo:first-letter{
 	color: #33cc99;
+	font-weight: 900;
 }
 
 .menu li a{
 	list-style-type: none;
 	text-decoration: none;
-	color: black;
+	color: #000;
 	float: right;
 	margin-right: 20px;
 	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 11px;
+
 }
 
 .menu li a:hover{
@@ -56,14 +65,18 @@
 .gallery {
 	height: auto;
 	margin-bottom: 100px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: black;
 }
 
 h2{
 	text-align: center;
 	font-size: 48px;
 	line-height: 32px;
-	color: black;
+	color: #666666;
 	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: black;
 }
 
 h2:after{
@@ -76,7 +89,7 @@ h2:after{
 }
 
 .featured {
-	width: 22.3%;
+	width: 22.9%;
 	float: left;
 	margin-right: 30px;
 	background: #e9f0fd;
@@ -127,7 +140,7 @@ h2:after{
 
 .section{
 	float: left;
-	width: 30.5%;
+	width: 31.5%;
 	margin-right: 30px;
 }
 
@@ -137,6 +150,14 @@ h2:after{
 
 .section img{
 	margin-bottom: 20px;
+}
+
+p:first-of-type{
+	font-size: 18px;
+	line-height: 26px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #666;
 }
 
 p:first-of-type:after{
@@ -151,6 +172,11 @@ p:first-of-type:after{
 
 p:last-of-type{
 	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #666;
 }
 
 
@@ -163,6 +189,8 @@ button{
 	background: #33cc99;
 	border: none;
 	border-radius: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 
