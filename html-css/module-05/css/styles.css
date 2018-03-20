@@ -5,18 +5,17 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
-	width: 1600px;
-	margin: 0 auto;
+
+
+.wrapper_top {
+	width: 1110px;
+	margin: 0 auto 30px;
 	font-size: 16px;
 	padding-top: 40px;
 }
 
 header {
-	width: 1110px;
-	margin: 0 auto 30px;
 	background-color: #fff;
-
 }
 
 .logo {
@@ -35,23 +34,25 @@ header {
 	font-weight: 900;
 }
 
-nav li{
+nav{
 	float: right;
+}
+
+nav li{
+	display: inline-block;
 	margin-right: 20px;
 }
 
 nav li a{
-	list-style-type: none;
 	text-decoration: none;
 	color: #000;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 11px;
 }
 
-nav li:first-child{
+nav li:last-child{
 	margin-right: 0px;
 }
 
@@ -61,27 +62,36 @@ nav li a:hover{
 }
 
 
-header:after{
+.wrapper_top:after{
 	content: "";
 	display: table;
 	clear: both;
 }
 
-article {
+
+.wrapper_middle {
+	width: 1600px;
+	margin: 0 auto;
+	font-size: 16px;
+	padding-top: 40px;
+}
+
+
+
+section:first-of-type {
 	position: relative;
 }
 
-h3 {
-	display: none;
-}
 
-.gradient_top {
+
+section:first-child:after {
 	display: block;
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 1;
 	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.52));
 }
 
@@ -95,7 +105,12 @@ h3 {
 	position: absolute;
 	left: 245px;
 	top: 230px;
+	z-index: 2;
 	border: none;
+}
+
+.left:hover {
+	background-color: rgb(51,204,153);
 }
 
  .right{
@@ -104,21 +119,27 @@ h3 {
 	padding: 30px 0;
 	width: 100px;
 	height: 100px;
-	background-color: rgb(51,204,153);
+	background-color: rgba(51,204,153,0.65);
 	position: absolute;
 	right: 245px;
 	top: 230px;
+	z-index: 2;
 	border: none;
+}
+
+.right:hover {
+	background-color: rgb(51,204,153);
 }
 
 .main_text {
 	position: absolute;
 	left: 430px;
 	top: 200px;
+	z-index: 2;
 	
 }
 
-.main_text a {
+.main_text h1 {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
@@ -128,11 +149,9 @@ h3 {
 	font-weight: 900;
 }
 
-.main_text a:hover{
-	color: #ff6600;
-}
 
-.main_text span{
+
+.main_text p{
 	display: block;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -143,14 +162,14 @@ h3 {
 
 }
 
-.collection {
-	width: 1600px;
+section:last-of-type {
+	width: 100%;
 	margin: 0 auto;
-	padding: 100px 245px 0 245px;
+	padding: 100px 245px 100px 245px;
 	background-color: #f6f7f8;	
 }
 
-.collection h2{
+section:last-of-type h2{
 	text-align: center;
 	font-size: 48px;
 	line-height: 32px;
@@ -158,32 +177,32 @@ h3 {
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
+	margin-bottom: 90px;
 }
 
-.collection h2:after{
+section:nth-of-type(2) h2:after{
 	display: block;
 	content: " ";
 	width: 164px;
 	border-bottom: 7px solid #33cc99;
-	margin: 30px auto 90px;
+	margin: 30px auto 0px;
 }
 
 
 
-section {
+.blocks {
 	float: left;
 	width: 22.9%;
 	margin-right: 30px;
-	margin-bottom: 100px;
 	background-color: #fff;
 	position: relative;
 }
 
-section:last-of-type {
+.blocks:last-of-type {
 	margin-right: 0px;
 }
 
-section a {
+.blocks a {
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -198,7 +217,7 @@ section a {
 	font-weight: 900;
 }
 
-section .price{
+.blocks .price{
 	display: inline-block;
 	text-transform: uppercase;
 	width: 20%;
@@ -213,11 +232,11 @@ section .price{
 	font-weight: 900;
 }
 
-section:hover a{
+.blocks:hover a{
 	background: #33cc99;
 }
 
-section:hover .price{
+.blocks:hover .price{
 	background: #7fd9c7;
 }
 
@@ -230,6 +249,7 @@ section:hover .price{
 	top: 2%;
 	background:  rgba(0,0,0,0.55);
 	z-index: 1;
+
 }
 
 .btn_into {
@@ -277,34 +297,42 @@ section:hover .price{
 	background-color: #33cc99;
 }
 
-section:hover .black_block, section:hover .btn_into {
+.blocks:hover .black_block, .blocks:hover .btn_into {
 	display: block;
 } 
 
-.collection:after {
+section:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
+
+
 footer {
+	width: 1600px;
 	background-color: #323232;
-	width: 100%;
-	height: 90px;
 	font-size: 16px;
 	line-height: 28px;
 	text-align: center;
 	padding-top: 35px;
+	padding-bottom: 35px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 
-footer p {
+footer li {
 	display: inline-block;
 	color: #fff;
 }
 
-footer span {
+footer li:nth-of-type(2){
+	border-left: 1px solid #fff;
+	padding-left: 5px;
+}
+
+footer a {
+	text-decoration: none;
 	color: #33cc99;
 }
 
