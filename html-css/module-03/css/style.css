@@ -4,16 +4,17 @@
 
 
 .wrapper {
-	width: 100%;
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-top: 65px;
+	padding-bottom: 70px;
 }
 
 /* Меню */
 
 .nav {
-	margin: 65px 0px 70px 300px; 
+	margin-bottom: 70px; 
+	text-align: center;
 	color: #666666;
 	font-family: 'Playfair Display';
 }
@@ -46,18 +47,17 @@ a:hover {
 
 .block_left, .block_right {
 	width: 420px;
-	padding: 20px;
 	display: inline-block;
 	color: #666666;
 	font-family: 'Playfair Display';
 }
 
 .block_left {
-	margin: 0 16px 100px 130px;
+	margin: 0 56px 100px 0;
 }
 
 .block_right {
-	margin: 0 130px 100px 0;
+	margin: 0 0 100px 0;
 }
 
 .last_block {
@@ -79,8 +79,6 @@ a:hover {
 }
 
 img {
-	width: 420px;
-	height: 280px;
 	margin: 0 0 30px 0;
 }
 
@@ -99,8 +97,8 @@ p {
 /* Кнопка */
 
 button {
-	display: inline-block;
-	margin: 0 0 70px 510px;
+	display: block;
+	margin: 0 auto;
 	padding: 0;
 	width: 160px;
 	height: 60px;
