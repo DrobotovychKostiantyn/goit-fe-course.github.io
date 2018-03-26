@@ -14,6 +14,7 @@
 	padding-top: 20px;
 	padding-bottom: 
 	height: auto;
+	outline: 1px solid silver;
 }
 
 header {
@@ -86,8 +87,9 @@ nav li a:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 80px;
+	outline: 1px solid silver;
 }
 
 .service_item {
@@ -98,6 +100,7 @@ nav li a:hover {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 90px;
+	outline: 1px solid silver;
 }
 
 .item_text {
@@ -140,9 +143,53 @@ nav li a:hover {
 	margin-bottom: 80px;
 }
 
-.team_item img {
-	margin-bottom: 40px;
+
+
+
+.bg_img {
+	background-color: #95e1d3;
+	position: relative;
 }
+
+
+.team_btn {
+	visibility: hidden;
+	background: linear-gradient(to bottom, rgba(243,129,129,0.5),rgba(252,227,138,0.5));
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.team_btn a {
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	padding-top: 15px;
+	border-right: 1px solid #f9bd87;
+	background-color: #fce38a;
+}
+
+.team_btn a:last-of-type {
+	border: none;
+}
+
+.team_btn a:hover {
+	background-color: #95e1d3;
+}
+
+.team_person .bg_img:hover img, .team_person .bg_img:hover .team_btn {
+	visibility: visible;
+	transform: translate(-3%,-3%);
+	transition: transform;
+	transition-duration: 200ms;
+}
+
 
 .team_item h3 {
 	text-transform: uppercase;
@@ -150,6 +197,7 @@ nav li a:hover {
 	font-size: 14px;
 	line-height: 17px;
 	margin-bottom: 15px;
+	padding-top: 40px;
 }
 
 .team_item span {
@@ -164,7 +212,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0 20px;
+	padding: 10px 0 10px;
 	border-top: 1px solid #999999;
 	font-size: 14px;
 	line-height: 16px;
