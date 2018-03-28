@@ -14,14 +14,11 @@
 	margin: 0 auto;
 	height: auto;
 	padding-top: 20px;
-	padding-bottom: 
-	height: auto;
+	
 }
 
 header {
 	display: flex;
-	width: 100%;
-	padding: 10px 0 10px;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 100px;
@@ -39,9 +36,6 @@ header a {
 	font-weight: 700;
 }
 
-nav {
-	flex-basis: 40%;
-}
 
 nav ul {
 	display: flex;
@@ -57,19 +51,27 @@ nav a{
 	font-weight: 400;
 }
 
+nav li{
+	margin-right: 20px;
+}
+
+nav li:last-of-type {
+	margin-right: 0px;
+}
+
 nav li a:hover {
 	color: #f38181;
 	border-bottom: 3px solid #f38181;
 	transition: color 200ms linear, border-bottom 200ms linear;
 }
 
-.main_text {
+section {
 	text-align: center;
 	margin-bottom: 60px;
 	color: #333;
 }
 
-.main_text span{
+section span{
 	display: inline-block;
 	font-size: 24px;
 	line-height: 29px;
@@ -78,7 +80,7 @@ nav li a:hover {
 	margin-bottom: 20px;
 }
 
-.main_text h2{
+section h2{
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
@@ -86,7 +88,7 @@ nav li a:hover {
 	font-weight: 700; 
 }
 
-.main_text h2::after {
+section h2::after {
 	content: " ";
 	display: block;
 	margin: 0 auto;
@@ -103,7 +105,7 @@ nav li a:hover {
 	margin-bottom: 80px;
 }
 
-.service_item {
+.service_block li {
 	flex-basis: 30%;
 	height: auto;
 	flex-direction: row;
@@ -117,11 +119,11 @@ nav li a:hover {
  	flex-basis: 85%;
 }
 
-.service_item:nth-of-type(n + 4) {
+.service_block li:nth-of-type(n + 4) {
 	margin-bottom: 0px;
 }
 
-.service_item h3 {
+.service_block h3 {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	font-size: 14px;
@@ -130,7 +132,7 @@ nav li a:hover {
 	font-weight: 400;
 }
 
-.service_item p {
+.service_block p {
 	color: #999999;
 	font-size: 15px;
 	line-height: 18px;
@@ -138,11 +140,11 @@ nav li a:hover {
 	font-weight: 400;
 }
 
-.main_text h2:last-of-type {
+section:last-of-type h2{
 	margin-bottom: 50px;
 }
 
-.main_text p {
+section p {
 	width: 75%;
 	margin: 0 auto;
 	color: #999999;
@@ -156,7 +158,6 @@ nav li a:hover {
 .team_person {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
 	margin-bottom: 80px;
 }
 
@@ -165,6 +166,7 @@ nav li a:hover {
 
 .bg_img {
 	position: relative;
+	margin-bottom: 40px;
 }
 
 
@@ -214,7 +216,7 @@ nav li a:hover {
 }
 
 
-.team_item h3 {
+.team_person li h3 {
 	text-transform: uppercase;
 	text-align: center;
 	color: #333;
@@ -223,10 +225,9 @@ nav li a:hover {
 	margin-bottom: 15px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	padding-top: 40px;
 }
 
-.team_item span {
+.team_person li span {
 	display: block;
 	text-align: center;
 	color: #999;
