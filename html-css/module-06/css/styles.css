@@ -124,27 +124,27 @@ section h2::after {
  	flex-basis: 85%;
 }
 
-.service_block li:first-of-type:before {
+.service_block li:first-of-type::before {
 	content: url(../img/clock.png);
 }
 
-.service_block li:nth-of-type(2):before {
+.service_block li:nth-of-type(2)::before {
 	content: url(../img/web.png);
 }
 
-.service_block li:nth-of-type(3):before {
+.service_block li:nth-of-type(3)::before {
 	content: url(../img/comp.png);
 }
 
-.service_block li:nth-of-type(4):before {
+.service_block li:nth-of-type(4)::before {
 	content: url(../img/seo.png);
 }
 
-.service_block li:nth-of-type(5):before {
+.service_block li:nth-of-type(5)::before {
 	content: url(../img/home.png);
 }
 
-.service_block li:nth-of-type(6):before {
+.service_block li:nth-of-type(6)::before {
 	content: url(../img/dig.png);
 }
 
