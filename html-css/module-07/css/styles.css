@@ -1,8 +1,12 @@
+@import url(../fonts/fonts.css);
 @import url(reset.css);
 
 * {
 	box-sizing: border-box;
 }
+
+/*font-family: 'OpenSans-Italic', sans-serif ;
+ font-family: 'Roboto-Regular', sans-serif;*/
 
 .wrapper_main {
 	width: 940px;
@@ -31,6 +35,7 @@ header {
 	font-size: 26px;
 	line-height: 41px;
 	color: #fed136;
+	font-family: 'Roboto-Regular', sans-serif;
 }
 
 nav ul {
@@ -53,6 +58,7 @@ nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 5px;
+	font-family: 'OpenSans-Italic', sans-serif;
 }
 
 nav a:hover {
@@ -72,12 +78,14 @@ nav a:hover {
 	line-height: 75px;
 	color: #222;
 	text-transform: uppercase;
+	font-family: 'Roboto-Regular', sans-serif;
 }
 
 .main_text span {
 	font-size: 16px;
 	line-height: 17px;
 	color: #777;
+	font-family: 'OpenSans-Italic', sans-serif;
 }
 
 .services {
@@ -114,6 +122,7 @@ nav a:hover {
 	line-height: 22px;
 	color: #222;
 	margin-bottom: 20px;
+	font-family: 'Roboto-Regular', sans-serif;
 }
 
 .services p {
@@ -122,13 +131,18 @@ nav a:hover {
 	font-size: 14px;
 	line-height: 17px;
 	color: #777;
+	font-family: 'RobotoSlab-Regular';
+}
+
+.bg_bottom {
+	background: #222;
 }
 
 .wrapper_bottom {
-	/*width: 1400px;*/
+	width: 1400px;
 	margin: 0 auto;
-	background-image: url("../img/map.png");
-	background-repeat: repeat-x;
+	background: url("../img/map.png");
+	/*opacity: 0.3;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -148,12 +162,14 @@ nav a:hover {
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	font-family: 'Roboto-Regular', sans-serif;
 }
 
 .text_bott span {
 	font-size: 16px;
 	line-height: 19px;
 	color: #777;
+	font-family: 'OpenSans-Italic', sans-serif;
 }
 
 form {
@@ -168,6 +184,8 @@ input  {
 	border-radius: 2px;
 	margin-bottom: 30px;
 	padding: 20px;
+	border: none;
+	font-family: 'Roboto-Regular', sans-serif;
 }
 
 input::-webkit-input-placeholder {
@@ -175,6 +193,32 @@ input::-webkit-input-placeholder {
 	font-size: 14px;
 	line-height: 17px;
 	color: #bbb;
+	font-family: 'Roboto-Regular', sans-serif;
+}
+
+input:focus:valid, textarea:focus:valid{
+	outline: 2px solid green;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+	outline: 2px solid red;
+}
+
+input:nth-of-type(3):focus{
+	outline: none;
+}
+
+input::-webkit-input-placeholder {
+	transition: color;
+	transition-duration: 2s;
+	transform-origin: linear; 
+}
+
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+	transition: color;
+	transition-duration: 0.5s;
+	transform-origin: linear;
 }
 
 input:last-of-type {
@@ -188,6 +232,7 @@ input:last-of-type {
 	color: #fff;
 	font-size: 18px;
 	line-height: 22px;
+	outline: none;
 }
 
 textarea {
@@ -205,4 +250,5 @@ textarea::-webkit-input-placeholder {
 	font-size: 14px;
 	line-height: 17px;
 	color: #bbb;
+	font-family: 'Roboto-Regular', sans-serif;
 }
