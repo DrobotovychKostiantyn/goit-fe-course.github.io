@@ -5,14 +5,10 @@
 	box-sizing: border-box;
 }
 
-/*font-family: 'OpenSans-Italic', sans-serif ;
- font-family: 'Roboto-Regular', sans-serif;*/
-
 .wrapper_main {
 	width: 940px;
 	margin: 0 auto;
-/*	outline: 1px solid silver;*/
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
@@ -26,8 +22,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/*outline: 1px solid red;*/
-	margin-bottom: 80px;
+	margin-bottom: 90px;
 }
 
 .logo {
@@ -121,7 +116,7 @@ nav a:hover {
 	font-size: 18px;
 	line-height: 22px;
 	color: #222;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	font-family: 'Roboto-Regular', sans-serif;
 }
 
@@ -141,18 +136,17 @@ nav a:hover {
 .wrapper_bottom {
 	width: 1400px;
 	margin: 0 auto;
-	background: url("../img/map.png");
-	/*opacity: 0.3;*/
+	background: url("../img/map.png") no-repeat;
+	background-position: bottom right;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 50px;
-	padding-bottom: 110px;
+	padding-top: 60px;
+	padding-bottom: 115px;
 }
 
 .text_bott {
 	text-align: center;
-/*	outline: 1px solid white;*/
 	margin-bottom: 80px;
 }
 
@@ -174,7 +168,6 @@ nav a:hover {
 
 form {
 	position: relative;
-	/*outline: 1px solid red;*/
 }
 
 input  {
