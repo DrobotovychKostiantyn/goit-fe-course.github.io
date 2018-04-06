@@ -18,7 +18,7 @@
 	padding-bottom: 0px;
 }
 
-header {
+.main_header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -76,7 +76,7 @@ nav a:hover {
 	font-family: 'Roboto-Regular', sans-serif;
 }
 
-.main_text span {
+.main_text h3 {
 	font-size: 16px;
 	line-height: 17px;
 	color: #777;
@@ -86,7 +86,7 @@ nav a:hover {
 .services {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 120px;
+	margin-bottom: 120px;
 }
 
 .services li {
@@ -138,9 +138,6 @@ nav a:hover {
 	margin: 0 auto;
 	background: url("../img/map.png") no-repeat;
 	background-position: bottom right;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	padding-top: 60px;
 	padding-bottom: 115px;
 }
@@ -159,7 +156,7 @@ nav a:hover {
 	font-family: 'Roboto-Regular', sans-serif;
 }
 
-.text_bott span {
+.text_bott h3 {
 	font-size: 16px;
 	line-height: 19px;
 	color: #777;
