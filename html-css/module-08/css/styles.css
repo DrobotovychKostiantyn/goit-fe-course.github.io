@@ -11,7 +11,6 @@ body {
 
 .wrapper {
 	width: 320px;
-	outline: 1px solid silver;
 	margin: 0 auto;
 }
 
@@ -35,7 +34,6 @@ nav ul {
 	font-size: 14px;
 	line-height: 16px;
 	margin-bottom: 120px;
-	outline: 1px solid red;
 }
 
 nav li {
@@ -49,13 +47,14 @@ nav li:last-of-type{
 nav a {
 	text-decoration: none;
 	color: #fff;
-	padding: 3px;
+	padding: 5px 10px;
+	border: 2px solid transparent;
 }
 
-nav li:last-of-type a {
+nav a:hover  {
 	border: 2px solid #fff;
 	border-radius: 20px;
-	padding: 5px 10px;
+	transition: border linear .5s;
 }
 
 .logo a{
@@ -71,15 +70,15 @@ nav li:last-of-type a {
 	color: #fff;
 }
 
-.main_text li {
+.content_top h2 {
 	font-size: 30px;
 	line-height: 36px;
 	text-transform: uppercase;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 
-.main_text {
+.content_top h2:last-of-type {
 	margin-bottom: 20px;
-	font-family: 'Montserrat-Bold', sans-serif;
 }
 
 .description li{
@@ -110,7 +109,6 @@ nav li:last-of-type a {
 .partners {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	outline: 1px solid red;
 }
 
 .partners_h li {
@@ -135,9 +133,8 @@ nav li:last-of-type a {
 
 .partners_item li {
 	margin-bottom: 30px;
-	width: 200px;
+	width: 236px;
 	position: relative;
-	outline: 1px solid red;
 }
 
 .partners_item h3 {
@@ -162,28 +159,28 @@ nav li:last-of-type a {
 .partners_item li:first-of-type h3::before{
 	content: url(../img/tv.png);
 	position: absolute;
-	left: 120px;
+	left: 145px;
 	top: 85px;
 }
 
 .partners_item li:nth-of-type(2) h3::before{
 	content: url(../img/him.png);
 	position: absolute;
-	left: 120px;
+	left: 145px;
 	top: 85px;
 }
 
 .partners_item li:nth-of-type(3) h3::before{
 	content: url(../img/cup.png);
 	position: absolute;
-	left: 120px;
+	left: 145px;
 	top: 85px;
 }
 
 .partners_item li:last-of-type h3::before{
 	content: url(../img/telega.png);
 	position: absolute;
-	left: 120px;
+	left: 145px;
 	top: 85px;
 }
 
@@ -204,7 +201,6 @@ nav li:last-of-type a {
 @media (min-width: 768px) and (max-width: 1439px) {
 	.wrapper {
 	width: 768px;
-	outline: 1px solid silver;
 	margin: 0 auto;
 }
 
@@ -218,23 +214,20 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	outline: 1px solid red;
 	margin-bottom: 150px;
 	padding: 0 50px;
-
 }
 
 nav ul {
 	margin-bottom: 0;
 }
 
-
-.main_text li {
+.content_top h2 {
 	font-size: 52px;
 	line-height: 62px;
 }
 
-.main_text {
+.content_top h2:last-of-type {
 	margin-bottom: 30px;
 }
 
@@ -257,7 +250,6 @@ nav ul {
 .partners {
 	padding-top: 70px;
 	padding-bottom: 40px;
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -278,11 +270,6 @@ nav ul {
 	justify-content: center;
 	align-items: flex-start;
 	max-width: 492px;
-	outline: 1px solid red;
-}
-
-.partners_item li{
-	width: 236px;
 }
 
 .partners_item li:nth-of-type(1) {
@@ -309,7 +296,6 @@ nav ul {
 @media (min-width: 1440px){
 	.wrapper {
 	width: 1440px;
-	outline: 1px solid silver;
 	margin: 0 auto;
 }
 
@@ -323,7 +309,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	outline: 1px solid red;
 	width: 942px;
 	margin: 0 auto;
 	margin-bottom: 160px;
@@ -333,13 +318,12 @@ nav ul {
 	margin-bottom: 0;
 }
 
-
-.main_text li {
+.content_top h2 {
 	font-size: 52px;
 	line-height: 62px;
 }
 
-.main_text {
+.content_top h2:last-of-type {
 	margin-bottom: 30px;
 }
 
@@ -362,7 +346,6 @@ nav ul {
 .partners {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -380,7 +363,6 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	outline: 1px solid red;
 	width: 942px;
 	align-items: flex-start;
 	margin-bottom: 40px;
