@@ -1,0 +1,291 @@
+@import url(../fonts/fonts.css);
+@import url(reset.css);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+}
+
+.wrap{
+	width: 320px;
+	margin: 0 auto;
+}
+
+.bg_top {
+	background-image: url(../img/bg_min.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header {
+	padding-top: 20px;
+	margin-bottom: 30px;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+
+nav ul {
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 120px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	border: 2px solid transparent;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	transition: border linear .5s;
+}
+
+.logo a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.content_top {
+	color: #fff;
+	text-align: center;
+}
+
+.content_top h2 {
+	font-size: 29px;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-family: 'Montserrat-Bold', sans-serif;
+	margin-bottom: 20px;
+}
+
+.content_top span{
+	font-family: 'Roboto-Light', sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.content_top button {
+	height: 40px;
+	border: none;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	color: #fff;
+	background-color: #ff4e50;
+	border-radius: 30px;
+	margin-bottom: 130px;
+}
+
+.partners {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.partners h2 {
+	display: inline-block;
+	text-align: center;
+	font-size: 22px;
+	line-height: 26px;
+	color: #333;
+	font-family: 'Montserrat-Bold', sans-serif;
+	margin-bottom: 20px;
+}
+
+
+.partners_item {
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.partners_item li {
+	display: block;
+	margin-bottom: 30px;
+	width: 236px;
+	position: relative;
+}
+
+.partners_item h3 {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.partners_item span {
+	font-size: 14px;
+	line-height: 17px;
+	color: #666;
+	text-align: center;
+	font-family: 'Roboto-Light', sans-serif;
+}
+
+.partners_item img {
+	margin-bottom: 20px;
+}
+
+.partners_item li:first-of-type h3::before{
+	content: url(../img/tv.png);
+	position: absolute;
+	left: 145px;
+	top: 85px;
+}
+
+.partners_item li:nth-of-type(2) h3::before{
+	content: url(../img/him.png);
+	position: absolute;
+	left: 145px;
+	top: 85px;
+}
+
+.partners_item li:nth-of-type(3) h3::before{
+	content: url(../img/cup.png);
+	position: absolute;
+	left: 145px;
+	top: 85px;
+}
+
+.partners_item li:last-of-type h3::before{
+	content: url(../img/telega.png);
+	position: absolute;
+	left: 145px;
+	top: 85px;
+}
+
+.partners button {
+	height: 40px;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	border: 1px solid #ff4e50;
+	border-radius: 30px;
+	background-color: transparent;
+	color: #ff4e50;
+	margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.wrap {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.bg_top {
+	background-image: url(../img/bg_tablet.png);
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+
+
+header {
+	padding: 0 50px;
+	margin-bottom: 0px;
+}
+
+nav ul {
+	margin-bottom: 0;
+}
+
+.logo {
+	margin-bottom: 150px;
+}
+
+.content_top h2 {
+	font-size: 52px;
+	line-height: 62px;
+	text-align: center;
+	margin: 0 auto 30px;
+}
+
+.content_top span {
+	font-size: 24px;
+	line-height: 29px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.content_top button {
+	width: 220px;
+	height: 40px;
+	margin-bottom: 230px;
+	
+}
+
+.partners {
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+
+.partners h2 {
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.partners_item {
+	max-width: 532px;
+}
+}
+
+@media screen and (min-width: 1200px){
+	.wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.bg_top {
+	background-image: url(../img/bg_top.png);
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+header {
+	margin: 0 auto;
+	margin-bottom: 160px;
+}
+
+nav ul {
+	margin-bottom: 0;
+}
+
+.content_top h2 {
+	font-size: 52px;
+	line-height: 62px;
+	margin: 0 auto 30px;
+}
+
+.content_top span {
+	font-size: 24px;
+	line-height: 29px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.content_top button {
+	height: 40px;
+	margin-bottom: 220px;	
+}
+
+.partners {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.partners h2 {
+	margin-bottom: 40px;
+}
+
+.partners_item {
+	margin-bottom: 40px;
+}
+}
