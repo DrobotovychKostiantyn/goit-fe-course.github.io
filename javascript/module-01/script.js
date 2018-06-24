@@ -35,7 +35,7 @@ let inGroup;
 
 const seats = prompt('Введите число необходимых мест');
 
-if ((seats % 2) !== 0 && (seats % 1) !== 0) {
+if ((seats % 1) !== 0) {
     alert('Ошибка ввода');
 } else if (seats <= 0) {
     alert('Ошибка ввода')
