@@ -28,4 +28,4 @@ const addLogin = (logins, login) => {
 console.log(addLogin(logins, "Poly"));
 
 //массив логинов
-console.log(logins);
+// console.log(logins);
