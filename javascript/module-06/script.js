@@ -48,12 +48,7 @@ class Hamburger {
      * @param {String} topping - Тип добавки
      */
     removeTopping(topping) {
-      let idx = 0;
-      
-      if(this._toppings.map(el => el === topping)) {
-        idx = this._toppings.indexOf(topping);
-        this._toppings.splice(idx,1);
-      }
+      this._toppings = this._toppings.filter(val => val !== topping);
     }
   
     /**
@@ -173,7 +168,7 @@ class Hamburger {
   
   // Добавка из приправы
   hamburger.addTopping(Hamburger.TOPPING_SPICE);
-  
+    
   // Спросим сколько там калорий
   console.log("Calories: ", hamburger.calculateCalories());
   
