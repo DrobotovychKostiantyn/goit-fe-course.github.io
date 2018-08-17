@@ -83,4 +83,4 @@ const posts = [
   
   document.querySelector('.cards').append(...cards);
   
-  console.log(createPostCard(posts));
+//   console.log(createPostCard(posts));
