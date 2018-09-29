@@ -121,9 +121,7 @@ const laptops = [
  
     const refs = {
         filterForm: document.querySelector('.js-form'),
-        sizeCheckbox: document.querySelectorAll('.js-size input[type=checkbox]'),
-        colorCheckbox: document.querySelectorAll('.js-color input[type=checkbox]'),
-        dateCheckbox: document.querySelectorAll('.js-date input[type=checkbox]'),
+        checkboxes: document.querySelectorAll('.js-form input[type=checkbox]'),
         result: document.querySelector('.js-result'),
         template: document.querySelector('.js-template'),
     }
@@ -137,22 +135,24 @@ const laptops = [
     const handleSizeForm = (e) => {
         e.preventDefault();
 
-        Array.from(refs.sizeCheckbox).reduce((acc, el) => el.checked ? filter.size.push(Number(el.value)) : acc , '');
-        Array.from(refs.colorCheckbox).reduce((acc, el) => el.checked ? filter.color.push(el.value) : acc , '');
-        Array.from(refs.dateCheckbox).reduce((acc, el) => el.checked ? filter.release_date.push(Number(el.value)) : acc , '');
+        Array.from(refs.checkboxes).reduce((acc, el) => {
+          const name = el.getAttribute('name');
+          const ternNumb = name == 'color' ? el.value : Number(el.value);
+          el.checked ? filter[name].push(ternNumb) : acc;
+        }, '');
 
         const filt =  Object.keys(filter).reduce((acc,key) => {
                 if(filter[key].length) {
-                    return acc.filter(el => filter[key].includes(el[key]))
+                    acc = laptops.filter(el => filter[key].includes(el[key]))
                 }
                 return acc;
-        },[...laptops])
+        },[])
 
         console.log(filt)
         const source = refs.template.innerHTML.trim();
         const temp = Handlebars.compile(source);
         const markup = filt.reduce((acc, el) => acc + temp(el),'');
-        refs.result.insertAdjacentHTML('afterbegin', markup)
+        refs.result.innerHTML = markup;
     }
 
     refs.filterForm.addEventListener('submit', handleSizeForm);
