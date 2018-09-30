@@ -143,15 +143,16 @@ const laptops = [
 
         const filt =  Object.keys(filter).reduce((acc,key) => {
                 if(filter[key].length) {
-                    acc = laptops.filter(el => filter[key].includes(el[key]))
+                  return  acc.filter(el => filter[key].includes(el[key]))
                 }
                 return acc;
-        },[])
+        },laptops)
 
         console.log(filt)
         const source = refs.template.innerHTML.trim();
         const temp = Handlebars.compile(source);
         const markup = filt.reduce((acc, el) => acc + temp(el),'');
+
         refs.result.innerHTML = markup;
     }
 
