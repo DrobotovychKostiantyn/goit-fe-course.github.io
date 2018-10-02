@@ -1,7 +1,24 @@
 .card {
-    width: 200px;
+    width: 400px;
     margin: 0 auto;
     display: flex;
     list-style: none;
     justify-content: space-between;
+    border: 1px solid silver;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.card-btn {
+    width: 100px;
+    border: 1px solid silver;
+    background-color: #fff;
+}
+
+.card-btn:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid transparent;
 }
