@@ -1,6 +1,8 @@
 <template class="js-template">
 	<ul class="card">
-		<li><a name="{{url}}" href="{{url}}">{{url}}</a></li>
-		<li><button class="card-btn">Del</button></li>
+		<li><img src="{{image}}" alt="" class="card-img"></li>
+		<li><a name="{{url}}" href="{{url}}" class="js-li-url">{{url}}</a></li>
+		<li><span>Description: {{description}}</span></li>
+		<li class="wrap-btn"><button class="card-btn">Del</button></li>
 	</ul>
 </template>
