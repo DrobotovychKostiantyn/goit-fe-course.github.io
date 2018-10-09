@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    publicPath:'http://goit-fe-course-homework.tk/webpack-test/dist/',
+    publicPath:'http://goit-fe-course-homework.tk/wbp-test/dist/',
   },
   module: {
     rules: [
