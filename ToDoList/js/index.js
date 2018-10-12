@@ -28,7 +28,8 @@ function handleRemoveLi(e) {
 
   if (e.target.nodeName !== "BUTTON") return;
 
-  e.target.parentNode.remove();
+  e.target.parentNode.classList.add("list-item-hide");
+  setTimeout(() => e.target.parentNode.remove(), 900);
 }
 
 list.addEventListener("click", handleRemoveLi);
