@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotereya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="winners js-winners">
+            <div class="winners-list js-winners-list"><span>Winners:</span></div>
+            <button class="winners-btn js-winners-btn">New winner</button>
+        </div>
+
+        <div class="js-registration registartion">
+            <form action="#" class="form-registration js-form-registration">
+                <label class="form-registration-label">Name: <input type="text" name="" id="" class="js-input-name"></label>
+                <label class="form-registration-label">Surname: <input type="text" name="" id="" class="js-input-surname"></label>
+                <label class="form-registration-label">Email: <input type="email" name="" id="" class="js-input-email"></label>
+                <label class="form-registration-label">Phone: <input type="tel" name="" id="" class="js-input-phone"></label>
+            </form>
+
+            <button class="registration-btn js-reg-save">Save</button>
+        </div>
+    
+        <div class="users-table">
+            <table class="js-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+    <template class="js-td">
+            <tr>
+                <td>{{name}}</td>
+                <td>{{surname}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+            </tr>
+    </template>
+
+    <template class="js-win-item">
+        <p>
+            <span>{{name}}</span>
+            <span>{{surname}}</span>
+        </p>
+    </template>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script src="./js/script.js"></script>    
+</body>
+</html>

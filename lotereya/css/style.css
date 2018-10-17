@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    padding-top: 50px;
+}
+
+
+
+.winners {
+    width: 500px;
+    min-height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    margin: 0 auto 20px;
+}
+
+.winners-btn {
+    display: block;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 20px;
+    line-height: 30px;
+    width: 160px;
+    height: 30px;
+}
+
+.winners-btn:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.registartion {
+    width: 500px;
+    margin: 0 auto 50px;
+}
+
+.form-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.form-registration-label {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form-registration-label:last-of-type {
+    margin-bottom: 0px;
+}
+
+.form-registration-label input {
+    width: 200px;
+}
+
+.registration-btn {
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-size: 30px;
+    background-color: #fff;
+    border: 1px solid black;
+    line-height: 30px;
+    margin: 0 0 0 auto;
+}
+
+.registration-btn:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px 5px;
+}
+
