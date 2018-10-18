@@ -3,13 +3,14 @@
 const refs = {
     winnersList: document.querySelector('.js-winners-list'),
     winnersBtn: document.querySelector('.js-winners-btn'),
+    formReg: document.querySelector('.js-form-registration'),
     inputName: document.querySelector('.js-input-name'),
     inputSurname: document.querySelector('.js-input-surname'),
     inputEmail: document.querySelector('.js-input-email'),
     inputPhone: document.querySelector('.js-input-phone'),
     saveBtn: document.querySelector('.js-reg-save'),
     table: document.querySelector('.js-table'),
-    regName: /^[A-Z][a-zA-Z_\.]{1,20}$/,
+    regName: /^[A-Z][a-z_\.]{1,20}$/,
     regEmail: /^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i,
     regPhone: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
     tempForTable: document.querySelector('.js-td'),
@@ -31,7 +32,6 @@ function handleSaveBtn(e) {
     e.preventDefault();
     
     if(!refs.regName.test(refs.inputName.value)) {
-        refs.inputName.style.outline = '1px solid red';
         return alert('Name isn\'t valid')
     }
 
@@ -43,7 +43,7 @@ function handleSaveBtn(e) {
         return alert('email is not valid');
     }
 
-    if(!refs.regPhone.test(refs.inputPhone.value)) {
+    if(refs.inputPhone.value !== '' && !refs.regPhone.test(refs.inputPhone.value)) {
         return alert('phone is not valid');
     }
 
@@ -58,6 +58,8 @@ function handleSaveBtn(e) {
     console.log(personsInfo);
 
     refs.table.insertAdjacentHTML('beforeend', templateForTable(person));
+
+    refs.formReg.reset();
 }
 
 
