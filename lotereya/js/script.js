@@ -32,19 +32,19 @@ function handleSaveBtn(e) {
     
     if(!refs.regName.test(refs.inputName.value)) {
         refs.inputName.style.outline = '1px solid red';
-        alert('Name isn\'t valid')
+        return alert('Name isn\'t valid')
     }
 
     if(!refs.regName.test(refs.inputSurname.value)) {
-        alert('Surname is not valid')
+        return alert('Surname is not valid')
     }
 
     if(!refs.regEmail.test(refs.inputEmail.value)) {
-        alert('email is not valid');
+        return alert('email is not valid');
     }
 
     if(!refs.regPhone.test(refs.inputPhone.value)) {
-        alert('phone is not valid');
+        return alert('phone is not valid');
     }
 
     const person = {

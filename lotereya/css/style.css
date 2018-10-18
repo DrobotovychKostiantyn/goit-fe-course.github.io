@@ -21,6 +21,10 @@
     margin: 0 auto 20px;
 }
 
+.winners-list-item {
+    margin-left: 70px;
+}
+
 .winners-btn {
     display: block;
     background-color: #fff;
