@@ -38,7 +38,7 @@ function handleFormSubmit(evt) {
 	fetchUrl(input.value).then(data => {
 		if(localStorage.getItem(data.url) !== null) return alert('Такая закладка уже есть!')
 		localStorage.setItem(data.url, data.url)
-		// console.log(data.url) 
+		console.log(data) 
 		const markup = temp(data)
 		listCards.insertAdjacentHTML('afterbegin', markup);
 	});
